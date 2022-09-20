@@ -33,11 +33,12 @@ export class ToDoList extends Component {
       placeholder='Enter the tasks '
       type="text"
       value={this.state.value}
+      aria-label="task-input"
       onChange={(e)=>{
         this.setState({value:e.target.value})
       }}
       />
-      <button type="submit">Submit</button>
+      <button type="submit" data-testid="submit-btn">Submit</button>
       </form>
       <hr/>
       <h2>Tasks</h2>

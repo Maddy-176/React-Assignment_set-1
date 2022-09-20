@@ -15,7 +15,7 @@ function App() {
       <h1>Assignments</h1>
       
            <CounterApp/>
-           {/* <ToDoList/> */}
+           <ToDoList/>
       
     </div>
   );
