@@ -5,7 +5,7 @@ import CounterApp from './components/CounterApp';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import Modal from './components/Modal';
-
+import ToDoList from './components/ToDoList';
 function App() {
 
 
@@ -15,6 +15,7 @@ function App() {
       <h1>Assignments</h1>
       
            <CounterApp/>
+           {/* <ToDoList/> */}
       
     </div>
   );
