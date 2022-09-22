@@ -30,10 +30,14 @@ test("displaying input task on screen ",()=>{
     const submitBtn=  screen.getByTestId("submit-btn")
 
 
-    //first checking an input task screen
+    //entering the tasking in input box
     fireEvent.change(input, {target: {value: 'jogging'}})
     expect(input.value).toBe('jogging');
+
+    //submitting the input task
     fireEvent.click(submitBtn);
+
+    //checking if the task  has been displayed on the screen
     screen.getByText('jogging');
 
 
